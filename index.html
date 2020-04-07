@@ -48,20 +48,34 @@
                     <input id="search" type="text" placeholder="Search">
                 </label>
                 <div class="select-container">
+                    <span>Your country</span>
                     <select name="" id="">
-                        <option value="usa">USA <span><img src="images/close.png" alt=""></span></option>
+                        <option value="usa">USA </option>
                     </select>
+                    <div class="bracket flex">
+                        <div class="close">
+                            <img src="images/close.png" alt="close" />
+                        </div>
+                        <div class="arrow">
+                            <img src="images/select.png" alt="arrow">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="course__cards">
                 <div class="card">
-                    <div class="container">
                         <div class="card__top">
-                            <div class="progress">
-                                <span>Progress 12 %</span>
+                                <div class="progress">
+                                    <p>Progress 12 %</p>
+                                </div>
+                            <div class="user">
+                                <img src="images/ava.png" alt="ava1">
+                                <div class="user__name">
+                                    <p>Alexa</p>
+                                </div>
                             </div>
-                            <img src="images/ava.png" alt="ava1">
-                        </div>
+                            </div>
+                    <div class="container">
                         <div class="card__title">
                             <h4>Take exam in Mathematics at 100 points</h4>
                         </div>
@@ -85,7 +99,91 @@
                                 <p>30 minutes</p>
                             </div>
                         </div>
-                        <div class="card_button">
+                        <div class="card__button">
+                            <button class="btn continue">Continue</button>
+                            <button class="btn more">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <div class="progress">
+                            <p>Progress 12 %</p>
+                        </div>
+                        <div class="user">
+                            <img src="images/ava.png" alt="ava1">
+                            <div class="user__name">
+                                <p>Alexa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card__title">
+                            <h4>Take exam in Mathematics at 100 points</h4>
+                        </div>
+                        <div class="card__terms ">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="images/student.png" alt="student">
+                                </div>
+                                <p>12 lessons</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="images/Union.png" alt="Union">
+                                </div>
+                                <p>12 tasks</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="images/youtube.png" alt="youtube">
+                                </div>
+                                <p>30 minutes</p>
+                            </div>
+                        </div>
+                        <div class="card__button">
+                            <button class="btn continue">Continue</button>
+                            <button class="btn more">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top">
+                        <div class="progress">
+                            <p>Progress 12 %</p>
+                        </div>
+                        <div class="user">
+                            <img src="images/ava.png" alt="ava1">
+                            <div class="user__name">
+                                <p>Alexa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card__title">
+                            <h4>Take exam in Mathematics at 100 points</h4>
+                        </div>
+                        <div class="card__terms ">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="images/student.png" alt="student">
+                                </div>
+                                <p>12 lessons</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="images/Union.png" alt="Union">
+                                </div>
+                                <p>12 tasks</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="images/youtube.png" alt="youtube">
+                                </div>
+                                <p>30 minutes</p>
+                            </div>
+                        </div>
+                        <div class="card__button">
                             <button class="btn continue">Continue</button>
                             <button class="btn more">More</button>
                         </div>
@@ -94,10 +192,55 @@
             </div>
         </div>
     </section>
-
 </main>
-<footer>
+ <div id="modal" class="modal">
 
-</footer>
+     <div class="modal-content">
+         <form>
+             <div class="container">
+                 <h4>Profile</h4>
+                 <div class="modal__nav">
+                     <ul>
+                         <li><a href="#" class="active">Registration</a></li>
+                         <li><a href="#">Sign in</a></li>
+                     </ul>
+                 </div>
+             </div>
+                 <div class="modal__auth">
+                     <p>You can sign in with social</p>
+                     <div class="socials">
+                         <a href="#" class="vk"></a>
+                         <a href="#" class="facebook"></a>
+                         <a href="#" class="google"></a>
+                     </div>
+                 </div>
+             <div class="container">
+                 <p>
+                     <label >
+                         <input type="text" name="name" placeholder="Your name">
+                     </label>
+                 </p>
+                 <p>
+                     <label >
+                         <input type="Email" name="email" placeholder="E-mail">
+                     </label>
+                 </p>
+                 <p>
+                     <label >
+                         <input type="phone" name="phone" placeholder="Phone">
+                     </label>
+                 </p>
+                 <p>
+                     <input type="checkbox">
+                     <span>I accept the terms of the offer of the </span><a href="#">privacy policy</a>
+                 </p>
+                 <button>Registration</button>
+                 <button>Sign in </button>
+             </div>
+         </form>
+     </div>
+
+ </div>
+<footer></footer>
 </body>
 </html>
