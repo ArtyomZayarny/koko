@@ -13,7 +13,9 @@ input:focus {
   outline: none; }
 
 button {
-  outline: none; }
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease; }
 
 a {
   text-decoration: none;
@@ -100,10 +102,10 @@ h1, h2, h3, h4 {
     line-height: 24px;
     color: #000000; }
 
-.course__search label {
+.search label {
   position: relative;
   display: inline-block; }
-  .course__search label:before {
+  .search label:before {
     content: '';
     width: 16px;
     height: 16px;
@@ -113,7 +115,7 @@ h1, h2, h3, h4 {
     position: absolute;
     left: 12px;
     top: 19px; }
-  .course__search label input {
+  .search label input {
     font-weight: normal;
     font-size: 16px;
     padding: 16px 12px;
@@ -123,8 +125,71 @@ h1, h2, h3, h4 {
     box-shadow: 0px 4px 16px rgba(51, 51, 51, 0.08), 0px 4px 4px rgba(51, 51, 51, 0.04);
     border-radius: 4px;
     padding-left: 44px; }
-    .course__search label input::-webkit-input-placeholder {
+    .search label input::-webkit-input-placeholder {
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
       color: rgba(17, 17, 17, 0.48); }
+
+.card {
+  max-width: 400px; }
+  .card__top {
+    width: 100%;
+    display: block;
+    height: 134px;
+    background: url("../images/image 10.png") no-repeat center;
+    background-size: cover;
+    position: relative; }
+    .card__top:before {
+      contnt: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      background: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.72) 93.75%);
+      top: 0;
+      left: 0; }
+  .card__title {
+    margin-bottom: 16px; }
+    .card__title h4 {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      color: #111111; }
+  .card__terms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px; }
+    .card__terms .item {
+      display: flex;
+      align-items: center; }
+      .card__terms .item .icon {
+        margin-right: 8px; }
+      .card__terms .item p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #111111; }
+
+.btn {
+  color: #6E41E2;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px; }
+
+.btn.continue {
+  border-radius: 8px;
+  border: 1px solid #6E41E2;
+  margin-right: 10px;
+  padding: 9px 26px; }
+  .btn.continue:hover {
+    background-color: #6E41E2;
+    color: #fff; }
+
+.btn.more {
+  padding: 9px 25px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px; }
+  .btn.more:hover {
+    border-color: #6E41E2; }
